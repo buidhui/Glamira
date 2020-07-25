@@ -1,8 +1,8 @@
 // 1. Abstract
 @import
-  'abstract/variables',
-  'abstract/functions',
-  'abstract/mixins';
+  'abstract/variables.scss',
+  'abstract/functions.scss',
+  'abstract/mixins.scss';
 
 // 2. Base
 @import
@@ -15,14 +15,14 @@
 // 4. Layout
 @import
   'layout/body.scss' ,
-  'layout/header.scss' ,
+  'layout/footer.scss' ,
   'layout/header.scss';
 
 // 5. Pages
 @import
-'pages/home',
-'pages/contact',
-'pages/about';
+    'pages/home.scss',
+    'pages/contact.scss',
+    'pages/about.scss';
 
 // 6. Themes
 @import

@@ -4,116 +4,120 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> -->
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/yourcode.js"></script>
-    <title>PSD to HTML</title>
+    <link rel="stylesheet" type="text/css" href="/sass/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Glamira</title>
 </head>
 
 <body>
     <header>
         <!-- <div class="container"> -->
-        <div class="top-header">
+        <section class="top-header">
             <div class="container">
-                <div class="shipping">
-                    <span class="fa fa-truck" aria-hidden="true"></span>
-                    <i class="fa fa-check" aria-hidden="true"></i>
-                    <a href="">Free Shipping</a>
-                </div>
-
-                <div class="return">
-                    <span class="fa fa-undo" aria-hidden="true"></span>
-                    <i class="fa fa-check" aria-hidden="true"></i>
-                    <a href="#">60 day return policy</a>
-                </div>
-
-                <div class="top-right">
-                    <div class="login">
-                        <a href="#">login/sign up</a>
+                <div class="top-header-content">
+                    <!-- Top header left -->
+                    <div class="shipping">
+                        <span class="fa fa-truck" aria-hidden="true"></span>
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                        <a href="">Free Shipping</a>
                     </div>
-
-                    <div class="heart">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                        <a class="content-icon" href="#">stored items</a>
-                        <a href="#">(0)</a>
+    
+                    <div class="return">
+                        <span class="fa fa-undo" aria-hidden="true"></span>
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                        <a href="#">60 day return policy</a>
                     </div>
-
-                    <div class="bag">
-                        <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                        <a class="content-icon" href="#">shopping cart</a>
-                        <a href="#">(2)</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="hr"></div>
-
-        <div class="header-logo">
-            <div class="container">
-                <div class="left-logo">
-                    <div class="menu-mobile">
-                        <i class="fa fa-bars" aria-hidden="true"></i>
-                    </div>
-                    <div class="search-mobile">
-                        <i class="fa fa-search" aria-hidden="true"></i>
-                    </div>
-                    <div class="menu-desktop">
-                        <div class="nav-menu-desktop">
-                            <a href="#">women</a>
-                            <a href="#">men</a>
-                            <a href="#">kids</a>
-                            <a href="#">wedding rings</a>
+                     <!-- Top header right -->
+                    <div class="top-header-right">
+                        <div class="login">
+                            <a href="#">login/sign up</a>
+                        </div>
+    
+                        <div class="favorites">
+                            <span>|</span>
+                            <a class="content-icon" href="#"> <i class="fa fa-heart fa-lg" aria-hidden="true"></i> favorites <span>(0)</span></a>
+                        </div>
+    
+                        <div class="bag">
+                            <span>|</span>
+                            <a class="content-icon" href="#"> <i class="fa fa-shopping-bag fa-lg" aria-hidden="true"></i> shopping bag <span>(2)</span></a>
                         </div>
                     </div>
                 </div>
-
-                <div class="img-logo">
-                    <img src="https://res.cloudinary.com/glamira/image/upload/c_limit,dpr_1.0,f_auto,fl_lossy,q_auto/skin/frontend/glamira2014/default/images/glamira-logo-new.png">
-                </div>
-
-                <div class="right-logo">
-                    <div class="right-logo-mobile">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                        <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                    </div>
-
-                    <div class="search-tablet-desktop">
-                        <input class="search-tablet" type="text" size="18px" placeholder="Search">
-                        <input class="search-desktop" type="text" size="45%" placeholder="Search">
-                        <i class="fa fa-search" aria-hidden="true"></i>
-                    </div>
-
-                </div>
             </div>
+        </section>
 
-
-        </div>
-
-        <div class="main-menu">
+        <div class="header-separate"></div>
+        <!-- Header Middle -->
+        <section class="header-middle">
             <div class="container">
-                <div class="topnav-mobile-tablet">
-                    <a href="#">women</a>
-                    <a href="#">men</a>
-                    <a href="#">kids</a>
-                    <a href="#">wedding rings</a>
+                <div class="header-middle-content">
+                    <div class="left-section">
+                        <div class="menu-mobile">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                        </div>
+                        <div class="search-mobile">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
+                        <div class="menu-desktop">
+                            <div class="nav-menu-desktop">
+                                <a href="#">jewelry</a>
+                                <a href="#">engagement</a>
+                                <a href="#">wedding</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="img-logo">
+                        <img src="/images/glamira-logo-new.png">
+                    </div>
+    
+                    <div class="right-section">
+                        <div class="right-section-mobile">
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                        </div>
+    
+                        <div class="search-section">
+                            <input class="search-tablet" type="search" size="19px" placeholder="Search">
+                            <input class="search-desktop" type="search" size="45%" placeholder="Search">
+                            <i class="fa fa-search"></i>
+                        </div>
+    
+                    </div>
                 </div>
-                <div class="topnav-desktop">
-                    <a href="#">engagement rings</a>
-                    <a href="#">diamond jewelry</a>
-                    <a href="#">engagement rings</a>
-                    <a href="#">jewelry</a>
-                    <a href="#">wedding rings</a>
-                    <a href="#">gift finder</a>
+            </div>
+        </section>
+
+        <!-- Main menu -->
+        <section class="main-menu">
+            <div class="container">
+                <div class="menu-content">
+                    <div class="topnav-mobile-tablet">
+                        <a href="#">jewelry</a>
+                        <a href="#">engagement</a>
+                        <a href="#">wedding</a>
+                    </div>
+                    <div class="topnav-desktop">
+                        <ul class="navbar">
+                            <li><a href="#">RINGS</a></li>
+                            <li><a href="#">NECKLACES</a></li>
+                            <li><a href="#">EARRINGS</a></li>
+                            <li><a href="#">BRACELETS</a></li>
+                            <li>
+                                <a href="#" class="active ">MORE JEWElLERY</a>
+                            </li>
+                            <li><a href="#">COLLECTIONS</a></li>
+                            <li><a href="#">MEN'S</a></li>
+                            <li><a href="#">KID'S</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
-        </div>
-        <!-- </div> -->
+        </section>
 
 
     </header>
@@ -122,10 +126,7 @@
 
 
     <main>
-        rjgpreiurh pihjwqojdfewib
-        <div>dfwtwe</div>
-        <div>ewtwtwet</div>
-        <div>fweewfwefeq </div>
+        <div>body </div>
     </main>
 
 
@@ -522,7 +523,7 @@
     </footer>
 
 
-
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
 </body>
 
 </html>
