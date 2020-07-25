@@ -1,0 +1,34 @@
+// 1. Abstract
+@import
+  'abstract/variables',
+  'abstract/functions',
+  'abstract/mixins';
+
+// 2. Base
+@import
+  'base/fonts.scss';
+
+// 3. Components
+@import
+    'components/buttons.scss';
+
+// 4. Layout
+@import
+  'layout/body.scss' ,
+  'layout/header.scss' ,
+  'layout/header.scss';
+
+// 5. Pages
+@import
+'pages/home',
+'pages/contact',
+'pages/about';
+
+// 6. Themes
+@import
+  'themes/dark_theme.scss';
+
+// 7. Vendors
+@import
+  'vendors/normalize.scss';
+
