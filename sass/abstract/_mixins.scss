@@ -1,0 +1,14 @@
+@mixin product-btn {
+    background-color: $main_color;
+    padding: 5px 40px;
+    text-transform: uppercase;
+    font-family: opensans;
+    font-size: 14px;
+    color: white;
+    border: 0px;
+    width: 70%;
+}
+@mixin container-padding {
+    padding: 0px;
+    margin: 0px;
+}

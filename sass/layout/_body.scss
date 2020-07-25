@@ -1,0 +1,94 @@
+@import '../abstract/mixins';
+// Main banner
+.main-banner{
+    background-color: #f4f4f4;
+    margin-top: 5px;
+    // @include container-padding;
+    .container{
+        padding: 0px;
+    }
+    .main-banner-content{
+        .banner-mobile{
+           
+                width: 100%;
+         
+            
+            @media(min-width: 768px){
+                display: none;
+            }
+        }
+        .banner-desktop{
+            display: none;
+            @media(min-width: 768px){
+                display: inline;
+                width: 100%;
+                overflow: hidden !important;
+            }
+            
+        }
+    }
+    
+}
+
+// Daddy Section
+.daddy{
+    // @include container-padding; 
+    .container{
+        padding: 0px;
+    }
+    .daddy-content{
+        
+        .product-intro{
+            margin-bottom: 20px;
+           
+            img{
+                margin: 0px 15% 0px 15%;
+                width: 70%;
+                overflow: hidden;
+                @media (min-width: 480px){
+                    width: 60%;
+                margin: 20% 10% 0px 30%;
+                }
+            }
+            button{
+                @include product-btn;
+                margin: 0 15% 0 15%;
+                @media (min-width: 480px){
+                    width: 50%;
+                margin: 20px 15% 0 35%;
+
+                }
+                @media (min-width: 480px)and(max-width: 991px){
+                    width: 70%;
+                margin: 20px 15% 0 25%;
+
+                }
+            }
+        }
+        .daddy-image{
+            .daddy-mobile{
+                    width: 90%;
+                    margin: 0 5% 0 5%;
+                    overflow: hidden;
+                    box-shadow: 10px 10px 60px #e5e5e5;
+
+                    @media (min-width: 480px){
+                        display: none;
+                    }
+            }
+            .daddy-desktop{
+                display: none;
+                @media (min-width: 480px){
+                        display: inline;
+                        width: 80%;
+                        margin: 10% 30% 5% 10%;
+
+                }
+            }
+           
+        }
+        @media (min-width: 480px){
+            display: flex;
+        }
+    }
+}

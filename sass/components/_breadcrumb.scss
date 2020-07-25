@@ -1,0 +1,21 @@
+.breadcrumb{
+    display: none !important;
+    background-color: white;
+    margin-bottom: 20px;
+    @media (min-width: 900px){
+        display: inline !important;
+    }
+    .breadcrumb-content{
+        float: left;
+        list-style: none;
+        text-transform: uppercase;
+        font-size: 10px;
+        margin: 0px;
+        font-family: opensans;
+        a{
+            color: $link_color;
+            margin-bottom: 50px !important;
+        }
+    }
+   
+}

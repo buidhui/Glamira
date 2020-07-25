@@ -247,7 +247,7 @@ header{
             padding-left: 55px;
             @media (min-width:480px){
                 padding-left: 15px;
-            }        
+            }           
             a{
                 float: left;
                 padding: 10px 0px;
@@ -259,6 +259,7 @@ header{
                 text-transform: uppercase;
                 font-family: futura_light;
             }
+           
             .topnav-mobile-tablet{
               
                 @media (min-width: 320px){
@@ -271,27 +272,22 @@ header{
                 }
                 
             }
+
+            // menu desktop
             .topnav-desktop{
                 display: none;
 
                 @media (min-width:900px){
                     display: inline;
-                    ul{
-                        list-style: none;
-                        padding: 0px;
-                        margin-bottom: 0px;
-                        li{
-                            :hover{
-                                border-bottom: 1px solid black;
-                            }
-                           a{
-                            padding: 5px 0px;
-                            color: black;
-                           }
+                    a{
+                        padding-right: 35px;
+                        color: black;
+                        &:hover{
+                            // color: white !important;
+                            border-bottom: 1px solid black;
                         }
                     }
                 }
             }
         }
     }
-// }
