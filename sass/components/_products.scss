@@ -1,0 +1,32 @@
+// Products
+
+.products{
+    margin-top: 10px;
+    .container{
+        padding: 0px;
+    }
+    .products-content{
+        .product-list{
+           .product-item{
+               position: relative;
+               margin-bottom: 5px;
+               
+               img{
+                width: 100%;
+                @media (min-width: 480px){
+                    width: 99%;
+                 }
+               }
+               button{
+                   @include product-btn;
+                   position: absolute;
+                   right: 13%;
+                   bottom: 10%;
+               }
+           }
+           @media (min-width: 480px){
+               display: flex;
+           }
+        }
+    }
+}

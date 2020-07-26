@@ -8,10 +8,11 @@ footer {
         text-transform: uppercase;
         font-family: opensans;
         font-size: 10px;
+        padding-bottom: 30px;
     }
 
-    hr{
-        border:1px solid #f3f3f3 ;
+    .hr{
+        border:1px solid #4c4c4c ;
     }
     
     @mixin content-style {
@@ -19,23 +20,15 @@ footer {
         text-transform: uppercase;
     }
 
-    @mixin icon-style {
-        float: left;
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 11pt;
-        margin: 0 10px; 
-    }
-
-
-    .footer-mobile-tablet{
+    .footer-mobile{
         @media (min-width:1024px){
             display: none;
         }
+        // Contact section
         .contact {
             justify-content: center;
     
-            .contact-content {
+            .contact-tittle {
                 @include content-style;
                 color: #414042;
                 font-size: 11pt;
@@ -50,19 +43,22 @@ footer {
                 .icon-call,
                 .icon-email {
                     @include icon-style;
+                    a{
+                        color: $link_color;
+                    }
                 }
             }
     
             .infor-contact {
                 text-align: center;
                 font-size: 11pt;
-                color: #a1a1a1;
+                color: $footer_color;
             }
-    
+    // Email subcribe
             .subscribe{
                 background-color: #f3f3f3;
                 text-align: center;
-                padding-bottom: 10px;
+                padding-bottom: 15px;
                 p{
                     text-align: center;
                     font-size: 11pt;
@@ -74,26 +70,27 @@ footer {
                     padding: 10px 10px; 
                     border: none;   
                     font-family: opensans;
-                    width: 50%;
+                    width: 60%;
                 }
                 button{  
                     padding: 10px 10px; 
                     border-radius: 0px;
+                    border: 1px solid black;
                     text-transform: uppercase;
                 }
             }
         }
     
     
-    
-        .box-content{
+    // Box Collapse
+        .box-collapse{
             background-color: #414042;
             text-transform: uppercase;
             font-family: opensans;
             padding: 10px;
             color: #fff;
             font-size: 14px;
-            .content{
+            .collapse-item{
                 padding: 10px 10px;;
                 border-bottom: solid 1px #4c4c4c;
                 i{
@@ -102,20 +99,17 @@ footer {
                 
             }
         }
+
+    // Review section
         .review, .bottom-footer, .copyright-footer{
             @media (min-width: 425px){
                 div{
-                    width: 350px;
+                    width: 80%;
                     text-align: center;
                     margin: 0 auto;
                 }
             }
-            
-            // display: inline;
-            // @media (min-width:768px){
-            //     display: none;
-            // }
-            
+          
         }
         .review{
             div{
@@ -138,13 +132,22 @@ footer {
                 span{
                     color: white;
                 }
+                .dot{
+                    font-size: 7px;
+                    i{
+                        padding-right: 10px;
+                    }
+                    .first{
+                        color: $btn_color;
+                    }
+                }
                 color: #aaaaaa;
                 
             }
             .more-review{
                 color:  #aaaaaa;
                 span{
-                    margin: 20px;
+                    margin: 10px;
                     color: white;
                 }
             }
@@ -155,7 +158,7 @@ footer {
         }
         
         .bottom-footer {
-            .clear{
+            .separate{
                 width: 100px;
                 height: 1px;
                 background-color: #4c4c4c;
@@ -164,27 +167,27 @@ footer {
             background-color: #414042;
             padding: 10px;
             
-            .country-select{
-                span{
-                    width: 45%;
+            .location{
+                font-size: 10px;
+                // height: 50px;
+                display: flex;
+                text-transform: uppercase;
+                padding: 10px 0; 
+                justify-content: center;
+                .flag{
+                    height: 15px;
+              transform: translate(-10px, 15px);
+
                 }
-                height: 50px;
-                .country-content{
-                    text-transform: uppercase;
-                    float: left;
-                    text-align: right;
-                    font-size: 10px;
-                    padding: 10px;
+                p {
+                    padding-top: 15px;
                 }
-                .country-region{
-                    img{
-                        padding: 10px;
-                        width: 70px;
-                        height: 40px;
-                        float: left;
+                .map{
+                    margin-left: 10px;
+                    @media (max-width: 480px){
+                    width: 25%;
+
                     }
-                    background-color: #414042;
-                    float: right;
                 }
             }
             .social-icons, .payment-method{
@@ -200,13 +203,7 @@ footer {
     }
 
 
-
-
-
-
-
-
-
+// Footer Desktop
 
 
     .footer-desktop{
@@ -215,20 +212,21 @@ footer {
         display: none;
         @media (min-width:1024px){
             display: inline;
-        }
-        
-        div{
-            background-color: #414042;
-            font-size: 13px;
-        }
-        .clear{
+            div{
+                background-color: #414042;
+                font-size: 13px;
+            }
+            .separate{
                 width: 1px;
                 height: 50px;
                 background-color: #4c4c4c;
                 margin: auto  30px;
         }
+        }
+        
+
         .top-footer{
-            padding-top:10px;
+            padding-top:30px;
             padding-bottom: 20px;
             .container{
             font-family: opensans;
@@ -259,19 +257,27 @@ footer {
                     border: 1px solid #a2a2a2;
                     height: 40px;
                     width: 25%;
-                    color: #a2a2a2;
+                    color: white;
+                    text-transform: uppercase;
+                    transform: translate(0px, -1px);
+                    cursor: pointer;
                 }
             }
-            .country-select{
+            .country{
                 width: 30%;
                 float: right;
                 text-align: left;
+                text-transform: uppercase;
                 img{
                     vertical-align: middle;
                 }
                 span{
                     padding-left:15px;
                     font-size: 10px;
+                    a{
+                          color: $link_color;
+                         text-decoration: none;
+                    }
                 }
             }
             }
@@ -287,7 +293,7 @@ footer {
         }
 
 
-        .review-footer{
+        .review-overall{
             padding-top:10px;
             padding-bottom: 20px;
             .container{
@@ -330,7 +336,7 @@ footer {
             }
         }
 
-        .content-footer{
+        .main-footer{
             padding-top:10px;
             padding-bottom: 20px;
             .container{
@@ -346,15 +352,22 @@ footer {
                         margin-bottom: 10px;
                         font-size: 14px;
                     }
-                    li{
-                        list-style: none;
-                        margin-bottom: 10px;
-                        font-size: 10px;
-                        color: #aaaaaa;
-                        span{
-                            color: #727272;
+                    ul{
+                        padding-left: 0px;
+                        a{
+                            text-decoration: none;
+                        }
+                        li{
+                            list-style: none;
+                            margin-bottom: 10px;
+                            font-size: 13px;
+                            color: #aaaaaa;
+                            span{
+                                color: #727272;
+                            }
                         }
                     }
+                   
                     }
                 }
             }

@@ -7,8 +7,25 @@
     color: white;
     border: 0px;
     width: 70%;
+    cursor: pointer;
+    &:hover{
+        background-color: $link_color;
+    }
 }
 @mixin container-padding {
     padding: 0px;
     margin: 0px;
+}
+
+@mixin product-item {
+    position: relative;
+}
+
+@mixin icon-style {
+    float: left;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 11pt;
+    margin: 0 10px;
+    color: $footer_color;
 }
