@@ -1,129 +1,14 @@
-@import '../abstract/mixins';
-// Main banner
-.main-banner{
-    background-color: #f4f4f4;
-    margin-top: 5px;
-    // @include container-padding;
-    .container{
-        padding: 0px;
-    }
-    .main-banner-content{
-        .banner-mobile{
-           
-                width: 100%;
-         
-            
-            @media(min-width: 768px){
-                display: none;
-            }
-        }
-        .banner-desktop{
-            display: none;
-            @media(min-width: 768px){
-                display: inline;
-                width: 100%;
-                overflow: hidden !important;
-            }
-            
-        }
-    }
-    
-}
-
-// Daddy Section
-.daddy{
-    // @include container-padding; 
-    .container{
-        padding: 0px;
-    }
-    .daddy-content{
-        
-        .product-intro{
-            margin-bottom: 20px;
-           
-            img{
-                margin: 0px 15% 0px 15%;
-                width: 70%;
-                overflow: hidden;
-                @media (min-width: 480px){
-                    width: 60%;
-                margin: 20% 10% 0px 30%;
-                }
-            }
-            button{
-                @include product-btn;
-                margin: 0 15% 0 15%;
-                @media (min-width: 480px){
-                    width: 50%;
-                margin: 20px 15% 0 35%;
-
-                }
-                @media (min-width: 480px)and(max-width: 991px){
-                    width: 70%;
-                margin: 20px 15% 0 25%;
-
-                }
-            }
-        }
-        .daddy-image{
-            .daddy-mobile{
-                    width: 90%;
-                    margin: 0 5% 0 5%;
-                    overflow: hidden;
-                    box-shadow: 10px 10px 60px #e5e5e5;
-
-                    @media (min-width: 480px){
-                        display: none;
-                    }
-            }
-            .daddy-desktop{
-                display: none;
-                @media (min-width: 480px){
-                        display: inline;
-                        width: 80%;
-                        margin: 10% 30% 5% 10%;
-
-                }
-            }
-           
-        }
-        @media (min-width: 480px){
-            display: flex;
-        }
-    }
-}
-
-// Sub banner 2
-.sub-banner2{
-    .sub-banner2-content{
-        margin-top: 20px;
-        position: relative;
-        @media (max-width: 480px){
-            .banner-desktop{
-                display: none;
-            }
-        }
-        .banner-mobile{
-            width: 100%;
-            @media (min-width: 480px){
-                    display: none;
-            }
-        }
-        button{
-            @include product-btn;
-            padding: 5px 20px;
-            position: absolute;
-            top: 7%;
-            left: 15%;
-            @media (min-width: 480px){
-                width: 25%;
-                padding: 10px 20px;
-                left: 37%;
-                top: 15%;
-            }
-        }
-        .banner-desktop{
-            width: 100%;
-        }
-    }
-}
+@import // Breadcrumb
+'components/body-sections/breadcrumb.scss',
+// Sub Banner
+'components/body-sections/sub-banner.scss',
+// Product Section
+'components/body-sections/products.scss',
+// Main Banner
+'components/body-sections/main-banner.scss',
+// Daddy Banner Section
+'components/body-sections/daddy-section.scss',
+// Sub Banner 2
+'components/body-sections/sub-banner-2.scss',
+// Collection Section
+'components/body-sections/collections.scss';

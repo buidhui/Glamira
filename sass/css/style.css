@@ -34,53 +34,52 @@
     .breadcrumb {
       display: none !important; } }
 
-@media (min-width: 480px) {
-  .sub-banner {
-    background-image: url("/images/background_banner.png");
-    background-repeat: no-repeat;
-    background-size: cover; } }
-
-@media (max-width: 480px) {
-  .sub-banner {
-    background-image: url("/images/banner_mobile.png");
-    background-repeat: no-repeat; } }
-
-.sub-banner .sub-banner-content {
-  margin-top: 30px;
-  overflow: hidden;
-  display: flex; }
-  @media (max-width: 480px) {
-    .sub-banner .sub-banner-content .sub-banner-left {
-      display: none; } }
-  .sub-banner .sub-banner-content p {
-    color: white;
-    font-size: 14px;
-    font-family: futura_light; }
-  .sub-banner .sub-banner-content h4 {
-    font-size: 22px;
-    font-family: opensans;
-    color: #e1bf83; }
-  .sub-banner .sub-banner-content button {
-    color: white;
-    background-color: #e1bf83;
-    font-family: opensans;
-    padding: 3px 60px;
-    border: 0px;
-    text-transform: uppercase;
-    margin-bottom: 10px; }
-  @media (max-width: 480px) {
-    .sub-banner .sub-banner-content .sub-banner-center .sale-info {
-      display: none; } }
-  @media (min-width: 480px) {
-    .sub-banner .sub-banner-content .sub-banner-center .sale-info-mobile {
-      display: none; } }
-  .sub-banner .sub-banner-content .sub-banner-center .item1 {
-    transform: translate(55px, 35px); }
-  .sub-banner .sub-banner-content .sub-banner-center .item2 {
-    font-size: 16px;
-    transform: translate(35px, -15px); }
-  .sub-banner .sub-banner-content .sub-banner-right p {
-    float: left; }
+.sub-banner {
+  overflow: hidden; }
+  .sub-banner .container-fluid {
+    padding: 0px; }
+  .sub-banner .sub-banner-content {
+    margin-top: 20px;
+    position: relative; }
+    .sub-banner .sub-banner-content .sale-banner-desktop {
+      display: inline;
+      width: 100%;
+      transform: translate(-7px, 0px); }
+      @media (max-width: 480px) {
+        .sub-banner .sub-banner-content .sale-banner-desktop {
+          display: none; } }
+    .sub-banner .sub-banner-content .sale-banner-mobile {
+      width: 100%; }
+      @media (min-width: 480px) {
+        .sub-banner .sub-banner-content .sale-banner-mobile {
+          display: none; } }
+    .sub-banner .sub-banner-content button {
+      background-color: #414042;
+      padding: 5px 40px;
+      text-transform: uppercase;
+      font-family: opensans;
+      font-size: 14px;
+      color: white;
+      border: 0px;
+      width: 70%;
+      cursor: pointer;
+      background-color: #e1bf83;
+      width: 75%;
+      position: absolute;
+      bottom: 8%;
+      left: 15%; }
+      .sub-banner .sub-banner-content button:hover {
+        background-color: #a5a5a6; }
+      @media (min-width: 1024px) {
+        .sub-banner .sub-banner-content button {
+          width: 15%;
+          padding: 10px 40px;
+          left: 42.3%; } }
+      @media (min-width: 480px) and (max-width: 1024px) {
+        .sub-banner .sub-banner-content button {
+          width: 20%;
+          left: 39.5%;
+          padding: 5px 15px; } }
 
 .products {
   margin-top: 10px; }
@@ -111,78 +110,6 @@
         background-color: #a5a5a6; }
   @media (min-width: 480px) {
     .products .products-content .product-list {
-      display: flex; } }
-
-.collection .container {
-  padding: 0px; }
-
-.collection .collection-content .collection-list {
-  transform: translate(0px, -80px); }
-  @media (min-width: 480px) {
-    .collection .collection-content .collection-list {
-      transform: translate(0px, -50px); } }
-  .collection .collection-content .collection-list .collection-item {
-    position: relative; }
-    .collection .collection-content .collection-list .collection-item img {
-      width: 90%;
-      margin: 0 5% 5px 5%; }
-      @media (min-width: 480px) {
-        .collection .collection-content .collection-list .collection-item img {
-          width: 99%; } }
-    .collection .collection-content .collection-list .collection-item button {
-      background-color: #414042;
-      padding: 5px 40px;
-      text-transform: uppercase;
-      font-family: opensans;
-      font-size: 14px;
-      color: white;
-      border: 0px;
-      width: 70%;
-      cursor: pointer;
-      position: absolute;
-      bottom: 15%;
-      left: 15%; }
-      .collection .collection-content .collection-list .collection-item button:hover {
-        background-color: #a5a5a6; }
-      @media (min-width: 480px) {
-        .collection .collection-content .collection-list .collection-item button {
-          left: 20%; } }
-  .collection .collection-content .collection-list .collection-event {
-    text-align: center;
-    padding: 8% 0 0 0; }
-    .collection .collection-content .collection-list .collection-event h4, .collection .collection-content .collection-list .collection-event p {
-      font-family: futura_light; }
-    .collection .collection-content .collection-list .collection-event h4 {
-      text-transform: uppercase;
-      font-size: 20px; }
-      @media (min-width: 480px) {
-        .collection .collection-content .collection-list .collection-event h4 {
-          font-size: 25px; } }
-    .collection .collection-content .collection-list .collection-event p {
-      font-size: 17px;
-      color: #e0be86;
-      transform: translate(0, -10px); }
-      @media (min-width: 480px) {
-        .collection .collection-content .collection-list .collection-event p {
-          font-size: 22px; } }
-    @media (min-width: 480px) {
-      .collection .collection-content .collection-list .collection-event {
-        width: 50%;
-        margin-left: 5%; } }
-  @media (max-width: 480px) {
-    .collection .collection-content .collection-list .collection-banner {
-      overflow: hidden; } }
-  .collection .collection-content .collection-list .collection-banner img {
-    width: 135%;
-    transform: translate(-12%, 0); }
-  @media (min-width: 480px) {
-    .collection .collection-content .collection-list .collection-banner {
-      width: 50%; }
-      .collection .collection-content .collection-list .collection-banner img {
-        width: 104.5%;
-        transform: translate(0, 0); } }
-  @media (min-width: 480px) {
-    .collection .collection-content .collection-list {
       display: flex; } }
 
 .main-banner {
@@ -294,6 +221,78 @@
         top: 15%; } }
   .sub-banner2 .sub-banner2-content .banner-desktop {
     width: 100%; }
+
+.collection .container {
+  padding: 0px; }
+
+.collection .collection-content .collection-list {
+  transform: translate(0px, -80px); }
+  @media (min-width: 480px) {
+    .collection .collection-content .collection-list {
+      transform: translate(0px, -50px); } }
+  .collection .collection-content .collection-list .collection-item {
+    position: relative; }
+    .collection .collection-content .collection-list .collection-item img {
+      width: 90%;
+      margin: 0 5% 5px 5%; }
+      @media (min-width: 480px) {
+        .collection .collection-content .collection-list .collection-item img {
+          width: 99%; } }
+    .collection .collection-content .collection-list .collection-item button {
+      background-color: #414042;
+      padding: 5px 40px;
+      text-transform: uppercase;
+      font-family: opensans;
+      font-size: 14px;
+      color: white;
+      border: 0px;
+      width: 70%;
+      cursor: pointer;
+      position: absolute;
+      bottom: 15%;
+      left: 15%; }
+      .collection .collection-content .collection-list .collection-item button:hover {
+        background-color: #a5a5a6; }
+      @media (min-width: 480px) {
+        .collection .collection-content .collection-list .collection-item button {
+          left: 20%; } }
+  .collection .collection-content .collection-list .collection-event {
+    text-align: center;
+    padding: 8% 0 0 0; }
+    .collection .collection-content .collection-list .collection-event h4, .collection .collection-content .collection-list .collection-event p {
+      font-family: futura_light; }
+    .collection .collection-content .collection-list .collection-event h4 {
+      text-transform: uppercase;
+      font-size: 20px; }
+      @media (min-width: 480px) {
+        .collection .collection-content .collection-list .collection-event h4 {
+          font-size: 25px; } }
+    .collection .collection-content .collection-list .collection-event p {
+      font-size: 17px;
+      color: #e0be86;
+      transform: translate(0, -10px); }
+      @media (min-width: 480px) {
+        .collection .collection-content .collection-list .collection-event p {
+          font-size: 22px; } }
+    @media (min-width: 480px) {
+      .collection .collection-content .collection-list .collection-event {
+        width: 50%;
+        margin-left: 5%; } }
+  @media (max-width: 480px) {
+    .collection .collection-content .collection-list .collection-banner {
+      overflow: hidden; } }
+  .collection .collection-content .collection-list .collection-banner img {
+    width: 135%;
+    transform: translate(-12%, 0); }
+  @media (min-width: 480px) {
+    .collection .collection-content .collection-list .collection-banner {
+      width: 50%; }
+      .collection .collection-content .collection-list .collection-banner img {
+        width: 104.5%;
+        transform: translate(0, 0); } }
+  @media (min-width: 480px) {
+    .collection .collection-content .collection-list {
+      display: flex; } }
 
 footer {
   color: #838283;

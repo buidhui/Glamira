@@ -1,39 +1,20 @@
 // 1. Abstract
-@import
-  'abstract/variables.scss',
-  'abstract/functions.scss',
-  'abstract/mixins.scss';
-
+@import 'abstract/variables.scss',
+'abstract/functions.scss',
+'abstract/mixins.scss';
 // 2. Base
-@import
-  'base/fonts.scss';
-
+@import 'base/fonts.scss';
 // 3. Components
-@import
-    'components/buttons.scss',
-    'components/breadcrumb.scss',
-    'components/subbanner.scss',
-    'components/products.scss',
-    'components/collections.scss';
-
-
+@import 'components/buttons.scss';
 // 4. Layout
-@import
-  'layout/body.scss' ,
-  'layout/footer.scss' ,
-  'layout/header.scss';
-
+@import 'layout/body.scss',
+'layout/footer.scss',
+'layout/header.scss';
 // 5. Pages
-@import
-    'pages/home.scss',
-    'pages/contact.scss',
-    'pages/about.scss';
-
+@import 'pages/home.scss',
+'pages/contact.scss',
+'pages/about.scss';
 // 6. Themes
-@import
-  'themes/dark_theme.scss';
-
+@import 'themes/dark_theme.scss';
 // 7. Vendors
-@import
-  'vendors/normalize.scss';
-
+@import 'vendors/normalize.scss';
