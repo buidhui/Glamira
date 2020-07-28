@@ -1,7 +1,8 @@
-@font-face{
+@font-face {
     font-family: stay-wildy;
     src: url('/fonts/stay-wildy.eot');
 }
+
 @font-face {
     font-family: futura_bk;
     src: url(/fonts/futura_bk_bt_book-webfont.eot);
@@ -19,9 +20,16 @@
 }
 
 @font-face {
+    font-family: futura_book;
+    src: url(/fonts/futurastd-book-webfont.eot);
+    src: url(/fonts/futurastd-book-webfont.svg);
+    src: url(/fonts/futurastd-book-webfont.ttf);
+    src: url(/fonts/futurastd-book-webfont.woff);
+}
+
+@font-face {
     font-family: opensans;
     src: url('/fonts/OpenSans.woff');
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-

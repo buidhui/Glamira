@@ -18,13 +18,20 @@
   src: url(/fonts/futurastd-light-webfont.woff); }
 
 @font-face {
+  font-family: futura_book;
+  src: url(/fonts/futurastd-book-webfont.eot);
+  src: url(/fonts/futurastd-book-webfont.svg);
+  src: url(/fonts/futurastd-book-webfont.ttf);
+  src: url(/fonts/futurastd-book-webfont.woff); }
+
+@font-face {
   font-family: opensans;
   src: url("/fonts/OpenSans.woff"); }
 
 .breadcrumb {
   background-color: white !important;
   margin: 0px !important;
-  padding: 4px 0 1px 0  !important;
+  padding: 4px 0 1px 0 !important;
   font-family: opensans !important;
   font-size: 10px;
   text-transform: uppercase;
@@ -33,6 +40,11 @@
   @media (max-width: 900px) {
     .breadcrumb {
       display: none !important; } }
+  .breadcrumb .breadcrumb-item {
+    color: #414042 !important;
+    background-color: white; }
+    .breadcrumb .breadcrumb-item a {
+      color: #414042 !important; }
 
 .sub-banner {
   overflow: hidden; }
@@ -779,3 +791,92 @@ header .top-header .top-header-content {
 
 body {
   margin: 0; }
+
+@media (max-width: 1024px) {
+  .breadcrumbs {
+    display: none; } }
+
+.product-banner-mobile .container {
+  padding: 0px; }
+
+.product-banner-mobile .product-banner-content {
+  position: relative; }
+  .product-banner-mobile .product-banner-content .product-banner-mobile {
+    width: 100%; }
+    @media (min-width: 480px) {
+      .product-banner-mobile .product-banner-content .product-banner-mobile {
+        display: none; } }
+  .product-banner-mobile .product-banner-content .slideshow-container {
+    position: absolute;
+    bottom: 3%;
+    margin: auto;
+    align-items: center; }
+    @media (min-width: 480px) {
+      .product-banner-mobile .product-banner-content .slideshow-container {
+        display: none; } }
+  .product-banner-mobile .product-banner-content .prev,
+  .product-banner-mobile .product-banner-content .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -20px;
+    color: #a5a5a6;
+    font-size: 25px;
+    transition: 0.6s ease;
+    user-select: none;
+    background-color: #bfbfbf; }
+  .product-banner-mobile .product-banner-content .next {
+    right: 0;
+    transform: translate(-8px, 0px);
+    border-radius: 0px 3px 3px 0px; }
+  .product-banner-mobile .product-banner-content .prev {
+    transform: translate(8px, 0px);
+    border-radius: 3px 0px 0px 3px; }
+  .product-banner-mobile .product-banner-content .prev:hover,
+  .product-banner-mobile .product-banner-content .next:hover {
+    color: white;
+    background-color: #a5a5a6; }
+  .product-banner-mobile .product-banner-content .fade {
+    padding-left: 5%;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s; }
+
+/* Fading animation */
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4; }
+  to {
+    opacity: 1; } }
+
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
+.product-mobile .container {
+  padding: 10px 30px 0 30px; }
+  .product-mobile .container .product-mobile-content {
+    border-bottom: 1px solid #d3d2d0;
+    padding-bottom: 15px; }
+    .product-mobile .container .product-mobile-content .display-op-mobile a {
+      font-size: 28px;
+      color: black; }
+    .product-mobile .container .product-mobile-content .display-op-mobile button {
+      float: right;
+      margin-top: 6px;
+      font-family: futura_book;
+      padding: 4px 15px;
+      border: 1px solid #d3d2d0;
+      border-radius: 3px;
+      background-color: white;
+      font-weight: 100; }
+      .product-mobile .container .product-mobile-content .display-op-mobile button span {
+        color: #a42727;
+        padding-left: 10px; }
+    .product-mobile .container .product-mobile-content .display-op-mobile .fa-th-large {
+      color: #a5a5a6;
+      font-size: 26px; }

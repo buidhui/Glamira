@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>Glamira</title>
+    <title>Product</title>
 </head>
 
 <body>
@@ -134,7 +134,82 @@
                 </nav>
             </div>
         </section>
-        PRODUCT LIST
+
+        <!-- Product banner Mobile -->
+        <section class="product-banner-mobile">
+            <div class="container">
+                <div class="product-banner-content">
+                    <img src="/images/Product/Mobile/banner-mobile.png" alt="" class="product-banner-mobile">
+                    <div class="slideshow-container">
+
+                        <div class="mySlides fade">
+                            <img src="/images/Product/Mobile/Semi-Eternity.png" style="width:95%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="/images/Product/Mobile/Semi-Eternity2.png" style="width:95%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="/images/Product/Mobile/Semi-Eternity.png" style="width:95%">
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product List Mobile -->
+        <section class="product-mobile">
+            <div class="container">
+                <div class="product-mobile-content">
+                    <div class="display-op-mobile">
+                        <a href="#"><i class="fa fa-th-large"></i></a>
+                        <a href="#"><i class="fa fa-bars"></i></a>
+                        <button type="submit">Refine <span>&#10095;</span></button>
+                    </div>
+                    <div class="product-mobile-list">
+                        <!-- <img src="/images/Product/Mobile/white.jpg" alt=""> -->
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+        <!-- Script -->
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[slideIndex - 1].style.display = "block";
+            }
+        </script>
 
     </main>
 
