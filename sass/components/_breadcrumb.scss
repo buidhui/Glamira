@@ -1,0 +1,14 @@
+.breadcrumb{
+    @media (max-width: 900px){
+        display: none !important;
+    }
+    background-color: white !important;
+    // height: 20px !important;
+    margin: 0px !important;
+    padding: 4px 0 1px 0  !important;
+    font-family: opensans !important;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: $link_color;   
+    transform: translate(-13px, 0px);
+}

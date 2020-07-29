@@ -1,4 +1,81 @@
 header {
+    .sidepanel  {
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: white;
+        overflow-x: hidden;
+        transition: .2s;
+        padding-top: 60px;
+        background-color: $main_color;
+
+        .topnav-mobile-tablet{
+            padding-left: 10px;
+             background-color: $main_color;
+             .top-menu-mobile{
+                .text-menu{
+                    position: absolute;
+                    top: 13px;
+                    left: 25px;
+                    font-size: 16px;
+                    color: white;
+                    font-family: futura_light;
+                }
+                .closebtn {
+                    position: absolute;
+                    top: 5px;
+                    right: 25px;
+                    font-size: 30px;
+                    color: white;
+                  }
+             }
+            a {
+                float: left;
+                padding: 10px 0px;
+                padding-right: 15px;
+                color: $link_color;
+                text-align: center;
+                text-decoration: none;
+                font-size: 13px;
+                text-transform: uppercase;
+                font-family: futura_book;
+            }
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box-collapse {
+            background-color: #eee;
+            text-transform: uppercase;
+            font-family: futura_book;
+            padding: 10px;
+            color:#ababab;
+            font-size: 13px;
+            .collapse-item {
+                padding: 15px 10px;
+                i {
+                    float: right;
+                }
+            }
+        }
+        .login{
+            padding-top: 15px;
+
+            a{
+                display: block;
+                padding: 5px 20px;
+                color: white;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-family: futura_book !important;
+            }
+        }
+       
+          
+      }
     .top-header {
         @media (min-width: 480px) {
             background-color: $main_color;
@@ -118,6 +195,7 @@ header {
             width: 35%;
             display: flex;
             // menu mobile
+            
             .menu-mobile,
             .search-mobile {
                 display: inline;

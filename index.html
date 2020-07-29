@@ -11,7 +11,7 @@
     <title>Glamira</title>
 </head>
 
-<body>
+<body id="main">
     <!-- Header -->
     <header>
         <!-- <div class="container"> -->
@@ -51,14 +51,57 @@
         </section>
 
         <div class="header-separate"></div>
+        <div id="mySidepanel" class="sidepanel">
+            <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><span>Menu</span> ×</a> -->
+            <div class="topnav-mobile-tablet">
+                <div class="top-menu-mobile" style="color: #414042;">
+                    <span class="text-menu">Menu</span>
+                    <span href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</span>
+                </div>
+                <a href="#">jewelry</a>
+                <a href="#">engagement</a>
+                <a href="#">wedding</a>
+            </div>
+            <div class="box-collapse">
+                <div class="collapse-item">
+                    <span>jewelry</span>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </div>
+                <div class="collapse-item">
+                    <span>engagement rings</span>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </div>
+                <div class="collapse-item">
+                    <span>wedding rings</span>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </div>
+                <div class="collapse-item">
+                    <span>Gemstones & Metals</span>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </div>
+                <div class="collapse-item">
+                    <span>men</span>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </div>
+                <div class="collapse-item">
+                    <span>kids</span>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="login">
+                <a href="#"><i class="fa fa-user-plus"> </i> login</a>
+                <a href="#"><i class="fa fa-user-plus"> </i> Register</a>
+        </div>
+          </div>
         <!-- Header Middle -->
         <section class="header-middle">
             <div class="container">
                 <div class="header-middle-content">
                     <div class="left-section">
-                        <div class="menu-mobile">
+                        <div class="menu-mobile openbtn" onclick="openNav()">
                             <i class="fa fa-bars" aria-hidden="true"></i>
                         </div>
+                       
                         <div class="search-mobile">
                             <i class="fa fa-search" aria-hidden="true"></i>
                         </div>
@@ -704,8 +747,16 @@
         </div>
 
     </footer>
-
-
+    
+    <script>
+        function openNav() {
+          document.getElementById("mySidepanel").style.width = "280px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidepanel").style.width = "0";
+        }
+        </script>
     <script src="https://kit.fontawesome.com/yourcode.js"></script>
 </body>
 
