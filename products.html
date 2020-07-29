@@ -54,12 +54,53 @@
         </section>
 
         <div class="header-separate"></div>
+        <div id="mySidepanel" class="sidepanel">
+            <div class="topnav-mobile-tablet">
+                <div class="top-menu-mobile" style="color: #414042;">
+                    <span class="text-menu">Menu</span>
+                    <span href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</span>
+                </div>
+                <a href="#">jewelry</a>
+                <a href="#">engagement</a>
+                <a href="#">wedding</a>
+            </div>
+            <div class="box-collapse">
+                <div class="collapse-item">
+                    <span>jewelry</span>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </div>
+                <div class="collapse-item">
+                    <span>engagement rings</span>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </div>
+                <div class="collapse-item">
+                    <span>wedding rings</span>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </div>
+                <div class="collapse-item">
+                    <span>Gemstones & Metals</span>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </div>
+                <div class="collapse-item">
+                    <span>men</span>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </div>
+                <div class="collapse-item">
+                    <span>kids</span>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="login">
+                <a href="#"><i class="fa fa-user-plus"> </i> login</a>
+                <a href="#"><i class="fa fa-user-plus"> </i> Register</a>
+        </div>
+          </div>
         <!-- Header Middle -->
         <section class="header-middle">
             <div class="container">
                 <div class="header-middle-content">
                     <div class="left-section">
-                        <div class="menu-mobile">
+                        <div class="menu-mobile openbtn" onclick="openNav()">
                             <i class="fa fa-bars" aria-hidden="true"></i>
                         </div>
                         <div class="search-mobile">
@@ -276,6 +317,32 @@
                 slides[slideIndex - 1].style.display = "block";
             }
         </script>
+         <script>
+            function openNav() {
+              document.getElementById("mySidepanel").style.width = "280px";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidepanel").style.width = "0";
+            }
+            </script>
+    
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+          });
+        }
+        </script>
 
     </main>
 
@@ -322,24 +389,114 @@
             <!-- Box Collapse -->
             <section class="box-collapse">
                 <div class="collapse-item">
-                    <span>healp & faq</span>
-                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    <span class="accordion">healp & faq</span>
+                    <div class="panel">
+                          <ul>
+                              <li>
+                                  <a href="#">FAQs</a>
+                              </li>
+                              <li>
+                                <a href="#">Payment Methods</a>
+                            </li>
+                            <li>
+                                <a href="#">Return Form</a>
+                            </li>
+                            <li>
+                                <a href="#">Site Map</a>
+                            </li>
+                            <li class="last">
+                                <a href="#">Shipping is handled by: <span><img src="/images/logo_footer.png" alt=""></span></a>
+                            </li>
+                          </ul>
+                      </div>
                 </div>
                 <div class="collapse-item">
-                    <span>why glamira</span>
-                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    <span class="accordion">why glamira</span>
+                    <div class="panel">
+                        <ul>
+                            <li>
+                                <a href="#">Who We Are</a>
+                            </li>
+                            <li>
+                              <a href="#">Why Choose Glamira</a>
+                          </li>
+                          <li>
+                              <a href="#">Glamira Worldwide</a>
+                          </li>
+                          <li>
+                              <a href="#">Customer Opinins About Us</a>
+                          </li>
+                          <li class="last">
+                              <a href="#">Our Production Facilities</a>
+                          </li>
+                        </ul>
+                      </div>
                 </div>
                 <div class="collapse-item">
-                    <span>about glamira</span>
-                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    <span class="accordion">about glamira</span>
+                    <div class="panel">
+                        <ul>
+                            <li>
+                                <a href="#">Who We Are</a>
+                            </li>
+                            <li>
+                              <a href="#">Why Choose Glamira</a>
+                          </li>
+                          <li>
+                              <a href="#">Glamira Worldwide</a>
+                          </li>
+                          <li>
+                              <a href="#">Customer Opinins About Us</a>
+                          </li>
+                          <li class="last">
+                              <a href="#">Our Production Facilities</a>
+                          </li>
+                        </ul>
+                      </div>
                 </div>
                 <div class="collapse-item">
-                    <span>guides & education</span>
-                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    <span class="accordion">guides & education</span>
+                    <div class="panel">
+                        <ul>
+                            <li>
+                                <a href="#">Who We Are</a>
+                            </li>
+                            <li>
+                              <a href="#">Why Choose Glamira</a>
+                          </li>
+                          <li>
+                              <a href="#">Glamira Worldwide</a>
+                          </li>
+                          <li>
+                              <a href="#">Customer Opinins About Us</a>
+                          </li>
+                          <li class="last">
+                              <a href="#">Our Production Facilities</a>
+                          </li>
+                        </ul>
+                      </div>
                 </div>
                 <div class="collapse-item">
-                    <span>our policies & legal</span>
-                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    <span class="accordion">our policies & legal</span>
+                    <div class="panel">
+                        <ul>
+                            <li>
+                                <a href="#">Who We Are</a>
+                            </li>
+                            <li>
+                              <a href="#">Why Choose Glamira</a>
+                          </li>
+                          <li>
+                              <a href="#">Glamira Worldwide</a>
+                          </li>
+                          <li>
+                              <a href="#">Customer Opinins About Us</a>
+                          </li>
+                          <li class="last">
+                              <a href="#">Our Production Facilities</a>
+                          </li>
+                        </ul>
+                      </div>
                 </div>
             </section>
             <!-- Review -->
@@ -745,6 +902,32 @@
 
     </footer>
 
+    <script>
+        function openNav() {
+          document.getElementById("mySidepanel").style.width = "280px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidepanel").style.width = "0";
+        }
+        </script>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
 
     <script src="https://kit.fontawesome.com/yourcode.js"></script>
 </body>
