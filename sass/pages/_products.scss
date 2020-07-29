@@ -25,6 +25,10 @@
             bottom: 3%;
             margin: auto;
             align-items: center;
+            .slide {
+                width: 90%;
+                margin-left: 5%;
+            }
         }
         .prev,
         .next {
@@ -39,6 +43,7 @@
             user-select: none;
             // border-radius: 0px 0px 0 3px;
             background-color: #bfbfbf;
+            font-weight: 100;
         }
         .next {
             right: 0;
@@ -46,7 +51,7 @@
             border-radius: 0px 3px 3px 0px;
         }
         .prev {
-            transform: translate(8px, 0px);
+            transform: translate(-10px, 0px);
             border-radius: 3px 0px 0px 3px;
         }
         .prev:hover,
@@ -114,6 +119,14 @@
                 .fa-th-large {
                     color: $link_color;
                     font-size: 26px;
+                }
+            }
+            .product-mobile-list {
+                .product-mobile-content {
+                    display: flex;
+                    .product-mobile-item {
+                        display: flex;
+                    }
                 }
             }
         }
