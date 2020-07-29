@@ -379,10 +379,45 @@ footer {
     color: #fff;
     font-size: 14px; }
     footer .footer-mobile .box-collapse .collapse-item {
-      padding: 10px 10px;
+      padding: 10px 10px 10px 10px;
       border-bottom: solid 1px #4c4c4c; }
-      footer .footer-mobile .box-collapse .collapse-item i {
-        float: right; }
+    footer .footer-mobile .box-collapse .accordion {
+      color: #fff;
+      cursor: pointer;
+      width: 100%;
+      border: none;
+      text-align: left;
+      transition: 0.1s;
+      font-family: opensans;
+      font-size: 14px;
+      font-weight: 700; }
+    footer .footer-mobile .box-collapse .active, footer .footer-mobile .box-collapse .accordion:hover {
+      background-color: #414042; }
+    footer .footer-mobile .box-collapse .accordion:after {
+      content: '\003E';
+      float: right;
+      margin-left: 5px; }
+    footer .footer-mobile .box-collapse .active:after {
+      content: '\0076'; }
+    footer .footer-mobile .box-collapse .panel {
+      background-color: 414042;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out; }
+      footer .footer-mobile .box-collapse .panel ul {
+        list-style: none;
+        padding-left: 0px; }
+        footer .footer-mobile .box-collapse .panel ul li {
+          text-transform: none;
+          padding: 10px 0 10px 0;
+          font-family: opensans;
+          font-size: 13px;
+          border-bottom: 1px solid #4c4c4c; }
+          footer .footer-mobile .box-collapse .panel ul li a {
+            color: #919192 !important; }
+        footer .footer-mobile .box-collapse .panel ul .last {
+          border-bottom: none;
+          padding-bottom: 0px; }
   @media (min-width: 425px) {
     footer .footer-mobile .review div,
     footer .footer-mobile .bottom-footer div,

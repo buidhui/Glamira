@@ -328,24 +328,114 @@
             <!-- Box Collapse -->
             <section class="box-collapse">
                 <div class="collapse-item">
-                    <span>healp & faq</span>
-                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    <span class="accordion">healp & faq</span>
+                    <div class="panel">
+                          <ul>
+                              <li>
+                                  <a href="#">FAQs</a>
+                              </li>
+                              <li>
+                                <a href="#">Payment Methods</a>
+                            </li>
+                            <li>
+                                <a href="#">Return Form</a>
+                            </li>
+                            <li>
+                                <a href="#">Site Map</a>
+                            </li>
+                            <li class="last">
+                                <a href="#">Shipping is handled by: <span><img src="/images/logo_footer.png" alt=""></span></a>
+                            </li>
+                          </ul>
+                      </div>
                 </div>
                 <div class="collapse-item">
-                    <span>why glamira</span>
-                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    <span class="accordion">why glamira</span>
+                    <div class="panel">
+                        <ul>
+                            <li>
+                                <a href="#">Who We Are</a>
+                            </li>
+                            <li>
+                              <a href="#">Why Choose Glamira</a>
+                          </li>
+                          <li>
+                              <a href="#">Glamira Worldwide</a>
+                          </li>
+                          <li>
+                              <a href="#">Customer Opinins About Us</a>
+                          </li>
+                          <li class="last">
+                              <a href="#">Our Production Facilities</a>
+                          </li>
+                        </ul>
+                      </div>
                 </div>
                 <div class="collapse-item">
-                    <span>about glamira</span>
-                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    <span class="accordion">about glamira</span>
+                    <div class="panel">
+                        <ul>
+                            <li>
+                                <a href="#">Who We Are</a>
+                            </li>
+                            <li>
+                              <a href="#">Why Choose Glamira</a>
+                          </li>
+                          <li>
+                              <a href="#">Glamira Worldwide</a>
+                          </li>
+                          <li>
+                              <a href="#">Customer Opinins About Us</a>
+                          </li>
+                          <li class="last">
+                              <a href="#">Our Production Facilities</a>
+                          </li>
+                        </ul>
+                      </div>
                 </div>
                 <div class="collapse-item">
-                    <span>guides & education</span>
-                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    <span class="accordion">guides & education</span>
+                    <div class="panel">
+                        <ul>
+                            <li>
+                                <a href="#">Who We Are</a>
+                            </li>
+                            <li>
+                              <a href="#">Why Choose Glamira</a>
+                          </li>
+                          <li>
+                              <a href="#">Glamira Worldwide</a>
+                          </li>
+                          <li>
+                              <a href="#">Customer Opinins About Us</a>
+                          </li>
+                          <li class="last">
+                              <a href="#">Our Production Facilities</a>
+                          </li>
+                        </ul>
+                      </div>
                 </div>
                 <div class="collapse-item">
-                    <span>our policies & legal</span>
-                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    <span class="accordion">our policies & legal</span>
+                    <div class="panel">
+                        <ul>
+                            <li>
+                                <a href="#">Who We Are</a>
+                            </li>
+                            <li>
+                              <a href="#">Why Choose Glamira</a>
+                          </li>
+                          <li>
+                              <a href="#">Glamira Worldwide</a>
+                          </li>
+                          <li>
+                              <a href="#">Customer Opinins About Us</a>
+                          </li>
+                          <li class="last">
+                              <a href="#">Our Production Facilities</a>
+                          </li>
+                        </ul>
+                      </div>
                 </div>
             </section>
             <!-- Review -->
@@ -757,6 +847,23 @@
           document.getElementById("mySidepanel").style.width = "0";
         }
         </script>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
     <script src="https://kit.fontawesome.com/yourcode.js"></script>
 </body>
 
