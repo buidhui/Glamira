@@ -8,10 +8,11 @@
     border: 0px;
     width: 70%;
     cursor: pointer;
-    &:hover{
+    &:hover {
         background-color: $link_color;
     }
 }
+
 @mixin container-padding {
     padding: 0px;
     margin: 0px;
@@ -28,4 +29,47 @@
     font-size: 11pt;
     margin: 0 10px;
     color: $footer_color;
+}
+
+// Product Info
+@mixin product-info {
+    display: block;
+    text-align: center;
+    img {
+        margin-left: 5px;
+    }
+    h4,
+    p,
+    span,
+    a {
+        font-size: 13px;
+        font-family: futura_light;
+        margin-bottom: 5px;
+        i {
+            font-size: 16px;
+        }
+        color: $link_color;
+    }
+    h4 {
+        font-weight: 500;
+        color: #414042;
+        font-family: futura_bk;
+    }
+    span {
+        font-family: futura_bk;
+    }
+    hr {
+        &:nth-child(5) {
+            width: 80%;
+            margin-left: 10%;
+        }
+        &:nth-child(7) {
+            width: 90%;
+            margin-left: 5%;
+        }
+        margin: 0px;
+    }
+    a {
+        font-size: 14px;
+    }
 }
