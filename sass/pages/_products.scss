@@ -1,4 +1,4 @@
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
     .breadcrumbs {
         display: none;
     }
@@ -6,3 +6,10 @@
 
 @import 'product/product_mobile',
 'product/product_tablet';
+#header-product {
+    @import 'product/product_header_desktop';
+}
+
+#breadcrumb-product-page {
+    display: none;
+}

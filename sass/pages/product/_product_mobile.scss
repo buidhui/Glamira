@@ -8,6 +8,21 @@
     }
     .product-banner-content {
         position: relative;
+        .breadcumb {
+            padding: 4px 0px 0px 18px;
+            font-size: 12px;
+            color: #767676;
+            font-family: futura_book;
+            span {
+                color: #767676;
+                padding: 0px 5px;
+                font-weight: 500;
+                font-size: 13px;
+            }
+            @media (max-width: 1023px) {
+                display: none;
+            }
+        }
         .product-banner-mobile {
             width: 100%;
             @media(min-width: 481px) {
@@ -19,6 +34,12 @@
                 display: none;
             }
             @media(min-width: 1024px) {
+                display: none;
+            }
+            width: 100%;
+        }
+        .product-banner-desktop {
+            @media(max-width: 1023px) {
                 display: none;
             }
             width: 100%;
@@ -71,8 +92,44 @@
                         content: url(/images/Product/Tablet/slide3.png);
                     }
                 }
-                @media (min-width: 1024px) {
-                    display: none;
+                @media (min-width: 1024px) and (max-width:1119px) {
+                    width: 70%;
+                    margin-left: 40.5%;
+                    .slide-item-mobile1 {
+                        content: url(/images/Product/Tablet/slide1.png);
+                    }
+                    .slide-item-mobile2 {
+                        content: url(/images/Product/Tablet/slide2.png);
+                    }
+                    .slide-item-mobile3 {
+                        content: url(/images/Product/Tablet/slide3.png);
+                    }
+                }
+                @media (min-width: 1020px) and (max-width:1199px) {
+                    width: 70%;
+                    margin-left: 40.5%;
+                    .slide-item-mobile1 {
+                        content: url(/images/Product/Tablet/slide1.png);
+                    }
+                    .slide-item-mobile2 {
+                        content: url(/images/Product/Tablet/slide2.png);
+                    }
+                    .slide-item-mobile3 {
+                        content: url(/images/Product/Tablet/slide3.png);
+                    }
+                }
+                @media (min-width: 1200px) {
+                    width: 85%;
+                    margin-left: 46.5%;
+                    .slide-item-mobile1 {
+                        content: url(/images/Product/Tablet/slide1.png);
+                    }
+                    .slide-item-mobile2 {
+                        content: url(/images/Product/Tablet/slide2.png);
+                    }
+                    .slide-item-mobile3 {
+                        content: url(/images/Product/Tablet/slide3.png);
+                    }
                 }
             }
         }
@@ -90,8 +147,11 @@
             // border-radius: 0px 0px 0 3px;
             background-color: #bfbfbf;
             font-weight: 100;
-            @media (min-width: 481px) and (max-width:767px) {
-            font-size: 20px;
+            @media (min-width: 481px) and (max-width: 767px) {
+                font-size: 20px;
+            }
+            @media (min-width: 1024px) and (max-width:1119px) {
+                transform: translate(100px, 0px);
             }
         }
         .next {
@@ -106,7 +166,10 @@
             }
             @media (min-width: 481px) and (max-width:767px) {
                 transform: translate(-75px, 6px);
-                }
+            }
+            @media (min-width: 1024px) {
+                display: none;
+            }
         }
         .prev {
             transform: translate(-10px, 0px);
@@ -119,7 +182,10 @@
             }
             @media (min-width: 481px) and (max-width:767px) {
                 transform: translate(40px, 6px);
-                }
+            }
+            @media (min-width: 1024px) {
+                display: none;
+            }
         }
         .prev:hover,
         .next:hover {
@@ -232,7 +298,6 @@
                         }
                         .product-info {
                             @include product-info;
-                            
                         }
                     }
                 }
@@ -259,19 +324,18 @@
                 padding: 1px 10px 1px 10px;
                 background-color: #eeeeee;
                 width: 76%;
-                @media (min-width: 768px) and (max-width:991px) {
-                width: 75.5%;
-                transform: translate(-3px, 0px);
+                @media (min-width: 768px) and (max-width: 991px) {
+                    width: 75.5%;
+                    transform: translate(-3px, 0px);
                 }
                 margin: 0 auto;
                 @media (min-width: 992px) and (max-width: 1024px) {
                     transform: translate(-14px, 0px);
                 }
-               
                 a {
                     font-size: 28px;
                     color: black;
-                    @media (min-width: 768px) and (max-width:991px) {
+                    @media (min-width: 768px) and (max-width: 991px) {
                         font-size: 20px;
                     }
                     @media (min-width: 481px) and (max-width:767px) {
@@ -289,15 +353,15 @@
                     background-color: #fcf9f1;
                     font-weight: 100;
                     // padding-bottom: 10px;
-                    @media (min-width: 768px) and (max-width:991px) {
+                    @media (min-width: 768px) and (max-width: 991px) {
                         padding: 0px 5px 5px 10px;
-                    margin-top: 2px;
-                    font-size: 13px;
+                        margin-top: 2px;
+                        font-size: 13px;
                     }
                     @media (min-width: 481px) and (max-width:767px) {
                         font-size: 11px;
                         padding: 0px 5px 3px 5px;
-                         margin-top: 1.5px;
+                        margin-top: 1.5px;
                     }
                     span {
                         color: #a42727;
@@ -307,7 +371,7 @@
                 .fa-th-large {
                     color: $link_color;
                     font-size: 26px;
-                    @media (min-width: 768px) and (max-width:991px) {
+                    @media (min-width: 768px) and (max-width: 991px) {
                         font-size: 19px;
                     }
                     @media (min-width: 481px) and (max-width:767px) {
@@ -319,48 +383,44 @@
             .product-tablet-list {
                 .product-tablet-content {
                     width: 75%;
-                   
                     display: flex;
                     border-bottom: none;
-                    margin: 20px  auto;
+                    margin: 20px auto;
                     .product-tablet-item {
                         .hr1 {
-                                width: 75%;
-                                // margin-left: 80%;
-                                transform: translate(20px, 0);
-                            }
-                        .hr2{
-                                width: 90%;
-                                // margin-left: 10%;
-                                transform: translate(10px, 0);
-                            }
-                    
+                            width: 75%;
+                            // margin-left: 80%;
+                            transform: translate(20px, 0);
+                        }
+                        .hr2 {
+                            width: 90%;
+                            // margin-left: 10%;
+                            transform: translate(10px, 0);
+                        }
                         overflow: hidden;
                         .product-img {
                             transform: translateX(7px);
                         }
-                    
                         img {
                             width: 90%;
                             margin-bottom: 2px;
                         }
                         .product-info-tablet {
                             @include product-info;
-                            span.favorite{
+                            span.favorite {
                                 font-size: 10px;
-                                @media (min-width: 768px) and (max-width:991px) {
+                                @media (min-width: 768px) and (max-width: 991px) {
                                     font-size: 9px;
                                 }
                                 @media (min-width: 481px) and (max-width:767px) {
                                     font-size: 0px;
                                 }
                             }
-                            span{
-                                
-                                i{
+                            span {
+                                i {
                                     font-size: 11px;
                                     color: #414042;
-                                    @media (min-width: 768px) and (max-width:991px) {
+                                    @media (min-width: 768px) and (max-width: 991px) {
                                         font-size: 10px;
                                     }
                                     @media (min-width: 481px) and (max-width:767px) {
@@ -371,12 +431,12 @@
                                     }
                                 }
                             }
-                            a{
-                                img{
+                            a {
+                                img {
                                     // width: 105%;
                                     margin-top: 5px;
                                 }
-                                img.color1{
+                                img.color1 {
                                     width: 38%;
                                 }
                             }

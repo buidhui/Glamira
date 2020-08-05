@@ -1,5 +1,5 @@
 header {
-    .sidepanel  {
+    .sidepanel {
         width: 0;
         position: fixed;
         z-index: 1;
@@ -11,12 +11,11 @@ header {
         transition: .2s;
         padding-top: 60px;
         background-color: $main_color;
-
-        .topnav-mobile-tablet{
+        .topnav-mobile-tablet {
             padding-left: 10px;
-             background-color: $main_color;
-             .top-menu-mobile{
-                .text-menu{
+            background-color: $main_color;
+            .top-menu-mobile {
+                .text-menu {
                     position: absolute;
                     top: 13px;
                     left: 25px;
@@ -30,8 +29,8 @@ header {
                     right: 25px;
                     font-size: 30px;
                     color: white;
-                  }
-             }
+                }
+            }
             a {
                 float: left;
                 padding: 10px 0px;
@@ -52,7 +51,7 @@ header {
             text-transform: uppercase;
             font-family: futura_book;
             padding: 10px;
-            color:#ababab;
+            color: #ababab;
             font-size: 13px;
             .collapse-item {
                 padding: 15px 10px;
@@ -61,10 +60,9 @@ header {
                 }
             }
         }
-        .login{
+        .login {
             padding-top: 15px;
-
-            a{
+            a {
                 display: block;
                 padding: 5px 20px;
                 color: white;
@@ -73,9 +71,7 @@ header {
                 font-family: futura_book !important;
             }
         }
-       
-          
-      }
+    }
     .top-header {
         @media (min-width: 480px) {
             background-color: $main_color;
@@ -195,7 +191,6 @@ header {
             width: 35%;
             display: flex;
             // menu mobile
-            
             .menu-mobile,
             .search-mobile {
                 display: inline;
@@ -282,7 +277,7 @@ header {
                     @media (min-width: 480px) and (max-width:767px) {
                         transform: translate(100px, 0) !important;
                         float: right !important;
-                    }      
+                    }
                 }
                 .search-tablet {
                     display: none;
@@ -299,7 +294,7 @@ header {
                     }
                     @media (min-width: 480px) and (max-width:767px) {
                         display: none;
-                    }      
+                    }
                 }
                 .search-desktop {
                     @extend .search-tablet;
