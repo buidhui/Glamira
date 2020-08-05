@@ -1,4 +1,4 @@
 ## Link Demo <br />
 http://glamiraui.surge.sh/ <br />
-## Product Mobile View <br />
-Switch to Mobile View > Click Hamburger Menu > Product option 
+## Product Screen <br />
+Click Option Product in Menu of Homepage (Click LOGO to return Homepage) 
