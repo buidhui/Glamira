@@ -33,7 +33,7 @@
   background-color: white !important;
   margin: 0px !important;
   padding: 4px 0 1px 0 !important;
-  font-family: opensans !important;
+  font-family: futura_book !important;
   font-size: 10px;
   text-transform: uppercase;
   color: #a5a5a6;
@@ -396,14 +396,17 @@ footer {
       font-family: opensans;
       font-size: 14px;
       font-weight: 700; }
-    footer .footer-mobile .box-collapse .active, footer .footer-mobile .box-collapse .accordion:hover {
+    footer .footer-mobile .box-collapse .active,
+    footer .footer-mobile .box-collapse .accordion:hover {
       background-color: #414042; }
     footer .footer-mobile .box-collapse .accordion:after {
-      content: '\003E';
+      font-family: FontAwesome;
+      content: "\f105";
       float: right;
       margin-left: 5px; }
     footer .footer-mobile .box-collapse .active:after {
-      content: '\0076'; }
+      font-family: FontAwesome;
+      content: "\f107"; }
     footer .footer-mobile .box-collapse .panel {
       background-color: 414042;
       max-height: 0;
@@ -1412,6 +1415,116 @@ body {
             margin-top: 5px; }
           .product-tablet .container .product-tablet-content .product-tablet-list .product-tablet-content .product-tablet-item .product-info-tablet a img.color1, .product-tablet .container .product-tablet-content .product-tablet-list .product-tablet-content .product-tablet-item .product-info-tablet #header-product .header-middle-product .header-middle-content .left-section .menu-desktop span img.color1, #header-product .header-middle-product .header-middle-content .left-section .menu-desktop .product-tablet .container .product-tablet-content .product-tablet-list .product-tablet-content .product-tablet-item .product-info-tablet span img.color1 {
             width: 38%; }
+
+.product-desktop {
+  margin-top: 15px; }
+  @media (max-width: 1023px) {
+    .product-desktop {
+      display: none; } }
+  .product-desktop .product-desktop-content {
+    display: flex; }
+    .product-desktop .product-desktop-content .left-section {
+      width: 27%; }
+      .product-desktop .product-desktop-content .left-section .title-left {
+        background-color: #eeeeee; }
+        .product-desktop .product-desktop-content .left-section .title-left p {
+          font-family: futura_book;
+          font-size: 15px;
+          color: #414042;
+          padding: 10px 10px;
+          text-transform: uppercase; }
+      .product-desktop .product-desktop-content .left-section .box-collapse {
+        text-transform: uppercase;
+        font-family: opensans;
+        color: black;
+        font-size: 14px; }
+        .product-desktop .product-desktop-content .left-section .box-collapse .collapse-item {
+          padding: 8px 0px; }
+        .product-desktop .product-desktop-content .left-section .box-collapse .accordion {
+          color: #666666;
+          cursor: pointer;
+          width: 100%;
+          border: none;
+          text-align: left;
+          transition: 0.1s;
+          font-family: futura_book;
+          font-size: 14px; }
+        .product-desktop .product-desktop-content .left-section .box-collapse .accordion:after {
+          font-family: FontAwesome;
+          content: "\f105";
+          float: right;
+          margin-left: 5px; }
+        .product-desktop .product-desktop-content .left-section .box-collapse .active:after {
+          font-family: FontAwesome;
+          content: "\f107"; }
+        .product-desktop .product-desktop-content .left-section .box-collapse .panel {
+          width: 95%;
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.3s ease-out; }
+          .product-desktop .product-desktop-content .left-section .box-collapse .panel ul {
+            list-style: none;
+            padding-left: 0px; }
+            .product-desktop .product-desktop-content .left-section .box-collapse .panel ul li {
+              text-transform: none;
+              padding: 5px 0 12px 0;
+              font-family: futura_light;
+              font-size: 13px;
+              border-bottom: 1px solid #e6e6e6; }
+              .product-desktop .product-desktop-content .left-section .box-collapse .panel ul li:hover {
+                background-color: #ececec; }
+                .product-desktop .product-desktop-content .left-section .box-collapse .panel ul li:hover a, .product-desktop .product-desktop-content #header-product .header-middle-product .header-middle-content .left-section .box-collapse .panel ul li:hover .menu-desktop span, #header-product .header-middle-product .header-middle-content .product-desktop .product-desktop-content .left-section .box-collapse .panel ul li:hover .menu-desktop span, .product-desktop .product-desktop-content #header-product .header-middle-product .header-middle-content .left-section .menu-desktop .box-collapse .panel ul li:hover span, #header-product .header-middle-product .header-middle-content .product-desktop .product-desktop-content .left-section .menu-desktop .box-collapse .panel ul li:hover span {
+                  color: black; }
+              .product-desktop .product-desktop-content .left-section .box-collapse .panel ul li a, .product-desktop .product-desktop-content #header-product .header-middle-product .header-middle-content .left-section .box-collapse .panel ul li .menu-desktop span, #header-product .header-middle-product .header-middle-content .product-desktop .product-desktop-content .left-section .box-collapse .panel ul li .menu-desktop span, .product-desktop .product-desktop-content #header-product .header-middle-product .header-middle-content .left-section .menu-desktop .box-collapse .panel ul li span, #header-product .header-middle-product .header-middle-content .product-desktop .product-desktop-content .left-section .menu-desktop .box-collapse .panel ul li span {
+                color: #767676;
+                text-decoration: none; }
+                .product-desktop .product-desktop-content .left-section .box-collapse .panel ul li a span, .product-desktop .product-desktop-content #header-product .header-middle-product .header-middle-content .left-section .box-collapse .panel ul li .menu-desktop span span, #header-product .header-middle-product .header-middle-content .product-desktop .product-desktop-content .left-section .box-collapse .panel ul li .menu-desktop span span, .product-desktop .product-desktop-content #header-product .header-middle-product .header-middle-content .left-section .menu-desktop .box-collapse .panel ul li span span, #header-product .header-middle-product .header-middle-content .product-desktop .product-desktop-content .left-section .menu-desktop .box-collapse .panel ul li span span {
+                  float: right; }
+            .product-desktop .product-desktop-content .left-section .box-collapse .panel ul .last {
+              border-bottom: none;
+              padding-bottom: 10px; }
+    .product-desktop .product-desktop-content .right-section {
+      width: 58%;
+      margin-left: 4.8%; }
+      @media (min-width: 1200px) {
+        .product-desktop .product-desktop-content .right-section {
+          width: 58.8%;
+          margin-left: 3.8%; } }
+      .product-desktop .product-desktop-content .right-section .title-right {
+        display: flex;
+        background-color: #eeeeee;
+        justify-content: space-between; }
+        .product-desktop .product-desktop-content .right-section .title-right .icon {
+          padding: 9px 0px 9px 10px; }
+          .product-desktop .product-desktop-content .right-section .title-right .icon img {
+            padding-right: 3px; }
+        .product-desktop .product-desktop-content .right-section .title-right .pagination {
+          padding: 13px 0px 5px 0px; }
+          .product-desktop .product-desktop-content .right-section .title-right .pagination p {
+            margin: 0px;
+            font-size: 13px;
+            transform: translate(50px, 0px); }
+            .product-desktop .product-desktop-content .right-section .title-right .pagination p span {
+              padding-right: 9px;
+              color: #939393; }
+              .product-desktop .product-desktop-content .right-section .title-right .pagination p span:nth-child(1) {
+                color: black; }
+              .product-desktop .product-desktop-content .right-section .title-right .pagination p span:nth-child(7) {
+                color: black; }
+        .product-desktop .product-desktop-content .right-section .title-right .option {
+          padding: 10px 0px 8px 0px; }
+          .product-desktop .product-desktop-content .right-section .title-right .option img {
+            width: 45%; }
+          .product-desktop .product-desktop-content .right-section .title-right .option button {
+            font-family: futura_book;
+            font-size: 13px;
+            color: #414042;
+            background-color: transparent;
+            border: none;
+            border-left: 1px solid #c5c5c5;
+            padding-right: 0px; }
+            .product-desktop .product-desktop-content .right-section .title-right .option button span i {
+              transform: translate(8px, -3px); }
 
 @media (min-width: 1024px) {
   #header-product .header-middle {
