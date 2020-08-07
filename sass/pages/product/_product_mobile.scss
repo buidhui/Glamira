@@ -8,6 +8,7 @@
     }
     .product-banner-content {
         position: relative;
+        overflow: hidden;
         .breadcumb {
             padding: 4px 0px 0px 18px;
             font-size: 12px;
@@ -42,7 +43,12 @@
             @media(max-width: 1023px) {
                 display: none;
             }
-            width: 100%;
+            @media(min-width: 1024px) and (max-width:1199px) {
+                width: 124%;
+                transform: translate(-104px, 0px);
+            }
+            width: 127%;
+            transform: translate(-155px, 0px);
         }
         .slideshow-container {
             position: absolute;
@@ -79,9 +85,9 @@
                         content: url(/images/Product/Tablet/slide3.png);
                     }
                 }
-                @media (min-width: 992px) and (max-width: 1024px) {
-                    width: 90%;
-                    margin-left: 15.75%;
+                @media (min-width: 992px) and (max-width: 1023px) {
+                    width: 90% !important;
+                    margin-left: 15.75% !important;
                     .slide-item-mobile1 {
                         content: url(/images/Product/Tablet/slide1.png);
                     }
@@ -92,22 +98,10 @@
                         content: url(/images/Product/Tablet/slide3.png);
                     }
                 }
-                @media (min-width: 1024px) and (max-width:1119px) {
-                    width: 70%;
+                @media (min-width: 1024px) and (max-width:1199px) {
+                    width: 83%;
                     margin-left: 40.5%;
-                    .slide-item-mobile1 {
-                        content: url(/images/Product/Tablet/slide1.png);
-                    }
-                    .slide-item-mobile2 {
-                        content: url(/images/Product/Tablet/slide2.png);
-                    }
-                    .slide-item-mobile3 {
-                        content: url(/images/Product/Tablet/slide3.png);
-                    }
-                }
-                @media (min-width: 1020px) and (max-width:1199px) {
-                    width: 70%;
-                    margin-left: 40.5%;
+                    margin-bottom: 0.5%;
                     .slide-item-mobile1 {
                         content: url(/images/Product/Tablet/slide1.png);
                     }
@@ -119,8 +113,9 @@
                     }
                 }
                 @media (min-width: 1200px) {
-                    width: 85%;
-                    margin-left: 46.5%;
+                    width: 100%;
+                    margin-left: 46.6%;
+                    margin-bottom: 0.5%;
                     .slide-item-mobile1 {
                         content: url(/images/Product/Tablet/slide1.png);
                     }

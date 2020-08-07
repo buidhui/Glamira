@@ -30,29 +30,29 @@
             .menu-desktop {
                 // margin-left: 10px;
                 transform: translate(40px, 15px);
-                @media (min-width: 1024px) and (max-width: 1119px) {
-                    transform: translate(30px, 13px);
+                @media (min-width: 1024px) and (max-width: 1199px) {
+                    // transform: translate(30px, 13px);
                     width: 120%;
                 }
-                @media (min-width: 1120px) and (max-width: 1199px) {
-                    transform: translate(30px, 14px);
-                    width: 120%;
-                }
+                // @media (min-width: 1120px) and (max-width: 1199px) {
+                //     transform: translate(30px, 14px);
+                //     width: 120%;
+                // }
                 a {
                     color: $link_color;
                     text-align: center;
                     padding-left: 4px;
                     text-decoration: none;
-                    font-size: 13px;
+                    font-size: 12px;
                     text-transform: uppercase;
                     font-family: futura_light;
                     &:hover {
                         color: white;
                     }
-                    @media (min-width: 1024px) and (max-width: 1119px) {
-                        font-size: 12px;
-                        padding-left: 3px;
-                    }
+                    // @media (min-width: 1024px) and (max-width: 1119px) {
+                    //     font-size: 12px;
+                    //     padding-left: 3px;
+                    // }
                 }
                 span {
                     @extend a;
@@ -61,16 +61,13 @@
         }
         .right-section {
             transform: translate(330px, 0px);
-            @media (min-width: 1024px) and (max-width: 1119px) {
+            @media (min-width: 1024px) and (max-width: 1199px) {
                 transform: translate(220px, 0px);
-            }
-            @media (min-width: 1120px) and (max-width: 1199px) {
-                transform: translate(170px, 0px);
             }
             .search-section {
                 background-color: #525252;
                 border: 1px solid #5f5f5f;
-                width: 60%;
+                width: 50%;
                 @media (min-width: 1024px) and (max-width: 1119px) {
                     width: 50%;
                 }
