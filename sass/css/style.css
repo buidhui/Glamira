@@ -1662,27 +1662,25 @@ body {
     justify-items: center; }
     #header-product .header-middle-product .header-middle-content .img-logo a > img, #header-product .header-middle-product .header-middle-content .img-logo .left-section .menu-desktop span > img, #header-product .header-middle-product .header-middle-content .left-section .menu-desktop .img-logo span > img {
       height: 40px; }
-    @media (min-width: 1024px) and (max-width: 1119px) {
-      #header-product .header-middle-product .header-middle-content .left-section {
-        font-size: 12px;
-        padding-left: 10px; } }
-    #header-product .header-middle-product .header-middle-content .left-section .menu-desktop {
-      transform: translate(40px, 15px); }
-      @media (min-width: 1024px) and (max-width: 1199px) {
-        #header-product .header-middle-product .header-middle-content .left-section .menu-desktop {
-          width: 120%; } }
-      #header-product .header-middle-product .header-middle-content .left-section .menu-desktop a, #header-product .header-middle-product .header-middle-content .left-section .menu-desktop span {
-        color: #a5a5a6;
-        text-align: center;
-        padding-left: 4px;
-        text-decoration: none;
-        font-size: 12px;
-        text-transform: uppercase;
-        font-family: futura_light; }
-        #header-product .header-middle-product .header-middle-content .left-section .menu-desktop a:hover, #header-product .header-middle-product .header-middle-content .left-section .menu-desktop span:hover {
-          color: white; }
+    #header-product .header-middle-product .header-middle-content .left-section {
+      padding-left: 10px; }
+      #header-product .header-middle-product .header-middle-content .left-section .menu-desktop {
+        transform: translate(40px, 15px); }
+        @media (min-width: 1024px) and (max-width: 1199px) {
+          #header-product .header-middle-product .header-middle-content .left-section .menu-desktop {
+            width: 120%; } }
+        #header-product .header-middle-product .header-middle-content .left-section .menu-desktop a, #header-product .header-middle-product .header-middle-content .left-section .menu-desktop span {
+          color: #a5a5a6;
+          text-align: center;
+          padding-left: 4px;
+          text-decoration: none;
+          font-size: 12px;
+          text-transform: uppercase;
+          font-family: futura_light; }
+          #header-product .header-middle-product .header-middle-content .left-section .menu-desktop a:hover, #header-product .header-middle-product .header-middle-content .left-section .menu-desktop span:hover {
+            color: white; }
     #header-product .header-middle-product .header-middle-content .right-section {
-      transform: translate(330px, 0px); }
+      transform: translate(380px, 0px); }
       @media (min-width: 1024px) and (max-width: 1199px) {
         #header-product .header-middle-product .header-middle-content .right-section {
           transform: translate(220px, 0px); } }

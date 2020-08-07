@@ -23,10 +23,7 @@
             }
         }
         .left-section {
-            @media (min-width: 1024px) and (max-width: 1119px) {
-                font-size: 12px;
                 padding-left: 10px;
-            }
             .menu-desktop {
                 // margin-left: 10px;
                 transform: translate(40px, 15px);
@@ -60,7 +57,7 @@
             }
         }
         .right-section {
-            transform: translate(330px, 0px);
+            transform: translate(380px, 0px);
             @media (min-width: 1024px) and (max-width: 1199px) {
                 transform: translate(220px, 0px);
             }
