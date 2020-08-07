@@ -44,11 +44,12 @@
                 display: none;
             }
             @media(min-width: 1024px) and (max-width:1199px) {
-                width: 124%;
-                transform: translate(-104px, 0px);
+                // width: 120%;
+                transform: translate(-70px, 0px);
             }
-            width: 127%;
-            transform: translate(-155px, 0px);
+            width: 120%;
+            // height: 280px !important;
+            transform: translate(-85px, 0px);
         }
         .slideshow-container {
             position: absolute;
@@ -101,7 +102,8 @@
                 @media (min-width: 1024px) and (max-width:1199px) {
                     width: 83%;
                     margin-left: 40.5%;
-                    margin-bottom: 0.5%;
+                    // margin-bottom: -1%;
+                    transform: translate(0px, -5px);
                     .slide-item-mobile1 {
                         content: url(/images/Product/Tablet/slide1.png);
                     }
@@ -113,9 +115,9 @@
                     }
                 }
                 @media (min-width: 1200px) {
-                    width: 100%;
+                    width: 100% ;
                     margin-left: 46.6%;
-                    margin-bottom: 0.5%;
+                    // margin-bottom: 0.5%;
                     .slide-item-mobile1 {
                         content: url(/images/Product/Tablet/slide1.png);
                     }
