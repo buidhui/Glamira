@@ -64,39 +64,39 @@
                     width: 90%;
                     margin-left: 5%;
                     .slide-item-mobile1 {
-                        content: url(/images/Product/Mobile/Semi-Eternity.png);
+                        content: url(/images/Product/Mobile/Semi-Eternity.webp);
                     }
                     .slide-item-mobile2 {
-                        content: url(/images/Product/Mobile/Semi-Eternity2.png);
+                        content: url(/images/Product/Mobile/Semi-Eternity2.webp);
                     }
                     .slide-item-mobile3 {
-                        content: url(/images/Product/Mobile/Semi-Eternity.png);
+                        content: url(/images/Product/Mobile/Semi-Eternity.webp);
                     }
                 }
                 @media (min-width: 481px) and (max-width: 992px) {
                     width: 70%;
                     margin-left: 14.7%;
                     .slide-item-mobile1 {
-                        content: url(/images/Product/Tablet/slide1.png);
+                        content: url(/images/Product/Tablet/slide1.webp);
                     }
                     .slide-item-mobile2 {
-                        content: url(/images/Product/Tablet/slide2.png);
+                        content: url(/images/Product/Tablet/slide2.webp);
                     }
                     .slide-item-mobile3 {
-                        content: url(/images/Product/Tablet/slide3.png);
+                        content: url(/images/Product/Tablet/slide3.webp);
                     }
                 }
                 @media (min-width: 992px) and (max-width: 1023px) {
                     width: 90% !important;
                     margin-left: 15.75% !important;
                     .slide-item-mobile1 {
-                        content: url(/images/Product/Tablet/slide1.png);
+                        content: url(/images/Product/Tablet/slide1.webp);
                     }
                     .slide-item-mobile2 {
-                        content: url(/images/Product/Tablet/slide2.png);
+                        content: url(/images/Product/Tablet/slide2.webp);
                     }
                     .slide-item-mobile3 {
-                        content: url(/images/Product/Tablet/slide3.png);
+                        content: url(/images/Product/Tablet/slide3.webp);
                     }
                 }
                 @media (min-width: 1024px) and (max-width:1199px) {
@@ -105,13 +105,13 @@
                     // margin-bottom: -1%;
                     transform: translate(0px, -5px);
                     .slide-item-mobile1 {
-                        content: url(/images/Product/Tablet/slide1.png);
+                        content: url(/images/Product/Tablet/slide1.webp);
                     }
                     .slide-item-mobile2 {
-                        content: url(/images/Product/Tablet/slide2.png);
+                        content: url(/images/Product/Tablet/slide2.webp);
                     }
                     .slide-item-mobile3 {
-                        content: url(/images/Product/Tablet/slide3.png);
+                        content: url(/images/Product/Tablet/slide3.webp);
                     }
                 }
                 @media (min-width: 1200px) {
@@ -119,13 +119,13 @@
                     margin-left: 46.6%;
                     // margin-bottom: 0.5%;
                     .slide-item-mobile1 {
-                        content: url(/images/Product/Tablet/slide1.png);
+                        content: url(/images/Product/Tablet/slide1.webp);
                     }
                     .slide-item-mobile2 {
-                        content: url(/images/Product/Tablet/slide2.png);
+                        content: url(/images/Product/Tablet/slide2.webp);
                     }
                     .slide-item-mobile3 {
-                        content: url(/images/Product/Tablet/slide3.png);
+                        content: url(/images/Product/Tablet/slide3.webp);
                     }
                 }
             }

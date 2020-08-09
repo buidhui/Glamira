@@ -993,52 +993,52 @@ body {
           width: 90%;
           margin-left: 5%; }
           .product-banner .product-banner-content .slideshow-container .slide .slide-item-mobile1 {
-            content: url(/images/Product/Mobile/Semi-Eternity.png); }
+            content: url(/images/Product/Mobile/Semi-Eternity.webp); }
           .product-banner .product-banner-content .slideshow-container .slide .slide-item-mobile2 {
-            content: url(/images/Product/Mobile/Semi-Eternity2.png); }
+            content: url(/images/Product/Mobile/Semi-Eternity2.webp); }
           .product-banner .product-banner-content .slideshow-container .slide .slide-item-mobile3 {
-            content: url(/images/Product/Mobile/Semi-Eternity.png); } }
+            content: url(/images/Product/Mobile/Semi-Eternity.webp); } }
       @media (min-width: 481px) and (max-width: 992px) {
         .product-banner .product-banner-content .slideshow-container .slide {
           width: 70%;
           margin-left: 14.7%; }
           .product-banner .product-banner-content .slideshow-container .slide .slide-item-mobile1 {
-            content: url(/images/Product/Tablet/slide1.png); }
+            content: url(/images/Product/Tablet/slide1.webp); }
           .product-banner .product-banner-content .slideshow-container .slide .slide-item-mobile2 {
-            content: url(/images/Product/Tablet/slide2.png); }
+            content: url(/images/Product/Tablet/slide2.webp); }
           .product-banner .product-banner-content .slideshow-container .slide .slide-item-mobile3 {
-            content: url(/images/Product/Tablet/slide3.png); } }
+            content: url(/images/Product/Tablet/slide3.webp); } }
       @media (min-width: 992px) and (max-width: 1023px) {
         .product-banner .product-banner-content .slideshow-container .slide {
           width: 90% !important;
           margin-left: 15.75% !important; }
           .product-banner .product-banner-content .slideshow-container .slide .slide-item-mobile1 {
-            content: url(/images/Product/Tablet/slide1.png); }
+            content: url(/images/Product/Tablet/slide1.webp); }
           .product-banner .product-banner-content .slideshow-container .slide .slide-item-mobile2 {
-            content: url(/images/Product/Tablet/slide2.png); }
+            content: url(/images/Product/Tablet/slide2.webp); }
           .product-banner .product-banner-content .slideshow-container .slide .slide-item-mobile3 {
-            content: url(/images/Product/Tablet/slide3.png); } }
+            content: url(/images/Product/Tablet/slide3.webp); } }
       @media (min-width: 1024px) and (max-width: 1199px) {
         .product-banner .product-banner-content .slideshow-container .slide {
           width: 83%;
           margin-left: 40.5%;
           transform: translate(0px, -5px); }
           .product-banner .product-banner-content .slideshow-container .slide .slide-item-mobile1 {
-            content: url(/images/Product/Tablet/slide1.png); }
+            content: url(/images/Product/Tablet/slide1.webp); }
           .product-banner .product-banner-content .slideshow-container .slide .slide-item-mobile2 {
-            content: url(/images/Product/Tablet/slide2.png); }
+            content: url(/images/Product/Tablet/slide2.webp); }
           .product-banner .product-banner-content .slideshow-container .slide .slide-item-mobile3 {
-            content: url(/images/Product/Tablet/slide3.png); } }
+            content: url(/images/Product/Tablet/slide3.webp); } }
       @media (min-width: 1200px) {
         .product-banner .product-banner-content .slideshow-container .slide {
           width: 100%;
           margin-left: 46.6%; }
           .product-banner .product-banner-content .slideshow-container .slide .slide-item-mobile1 {
-            content: url(/images/Product/Tablet/slide1.png); }
+            content: url(/images/Product/Tablet/slide1.webp); }
           .product-banner .product-banner-content .slideshow-container .slide .slide-item-mobile2 {
-            content: url(/images/Product/Tablet/slide2.png); }
+            content: url(/images/Product/Tablet/slide2.webp); }
           .product-banner .product-banner-content .slideshow-container .slide .slide-item-mobile3 {
-            content: url(/images/Product/Tablet/slide3.png); } }
+            content: url(/images/Product/Tablet/slide3.webp); } }
     .product-banner .product-banner-content .prev,
     .product-banner .product-banner-content .next {
       cursor: pointer;
