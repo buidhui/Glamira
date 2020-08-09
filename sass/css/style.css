@@ -973,12 +973,14 @@ body {
           display: none; } }
     .product-banner .product-banner-content .product-banner-desktop {
       width: 120%;
+      height: 340px !important;
       transform: translate(-85px, 0px); }
       @media (max-width: 1023px) {
         .product-banner .product-banner-content .product-banner-desktop {
           display: none; } }
       @media (min-width: 1024px) and (max-width: 1199px) {
         .product-banner .product-banner-content .product-banner-desktop {
+          height: 290px !important;
           transform: translate(-70px, 0px); } }
     .product-banner .product-banner-content .slideshow-container {
       position: absolute;

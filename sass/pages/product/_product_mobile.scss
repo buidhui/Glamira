@@ -45,10 +45,11 @@
             }
             @media(min-width: 1024px) and (max-width:1199px) {
                 // width: 120%;
+            height: 290px !important;
                 transform: translate(-70px, 0px);
             }
             width: 120%;
-            // height: 280px !important;
+            height: 340px !important;
             transform: translate(-85px, 0px);
         }
         .slideshow-container {
