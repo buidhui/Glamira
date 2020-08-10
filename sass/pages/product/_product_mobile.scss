@@ -1,6 +1,6 @@
 // Product Mobile 
 .product-banner {
-    background-color: #f3f3f3;
+    background-color: #f5f5f5;
     .container {
         padding: 0px;
         // margin: 0px;
@@ -45,12 +45,12 @@
             }
             @media(min-width: 1024px) and (max-width:1199px) {
                 // width: 120%;
-            height: 290px !important;
-                transform: translate(-70px, 0px);
+                height: 290px !important;
+                transform: translate(-70px, 20px);
             }
             width: 120%;
             height: 340px !important;
-            transform: translate(-85px, 0px);
+            transform: translate(-85px, 20px);
         }
         .slideshow-container {
             position: absolute;
@@ -116,7 +116,7 @@
                     }
                 }
                 @media (min-width: 1200px) {
-                    width: 100% ;
+                    width: 100%;
                     margin-left: 46.6%;
                     // margin-bottom: 0.5%;
                     .slide-item-mobile1 {
