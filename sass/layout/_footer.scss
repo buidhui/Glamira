@@ -107,10 +107,12 @@ footer {
                 content: "\f105";
                 float: right;
                 margin-left: 5px;
+                font-display: swap;
             }
             .active:after {
                 font-family: FontAwesome;
                 content: "\f107";
+                font-display: swap;
             }
             .panel {
                 background-color: 414042;

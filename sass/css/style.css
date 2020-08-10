@@ -1,32 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 @font-face {
   font-family: stay-wildy;
-  src: url("/fonts/stay-wildy.eot"); }
+  src: url("/fonts/stay-wildy.eot");
+  font-display: swap; }
 
 @font-face {
   font-family: futura_bk;
   src: url(/fonts/futura_bk_bt_book-webfont.eot);
   src: url(/fonts/futura_bk_bt_book-webfont.svg);
   src: url(/fonts/futura_bk_bt_book-webfont.ttf);
-  src: url(/fonts/futura_bk_bt_book-webfont.woff); }
+  src: url(/fonts/futura_bk_bt_book-webfont.woff);
+  font-display: swap; }
 
 @font-face {
   font-family: futura_light;
   src: url(/fonts/futurastd-light-webfont.ttf);
   src: url(/fonts/futurastd-light-webfont.eot);
   src: url(/fonts/futurastd-light-webfont.svg);
-  src: url(/fonts/futurastd-light-webfont.woff); }
+  src: url(/fonts/futurastd-light-webfont.woff);
+  font-display: swap; }
 
 @font-face {
   font-family: futura_book;
   src: url(/fonts/futurastd-book-webfont.eot);
   src: url(/fonts/futurastd-book-webfont.svg);
   src: url(/fonts/futurastd-book-webfont.ttf);
-  src: url(/fonts/futurastd-book-webfont.woff); }
+  src: url(/fonts/futurastd-book-webfont.woff);
+  font-display: swap; }
+
+@font-face {
+  font-family: fontawesome;
+  src: url(/fonts/fontawesome-webfont.woff);
+  src: url(/fonts/fontawesome-webfont.ttf);
+  src: url(/fonts/fontawesome-webfont.svg);
+  src: url(/fonts/fontawesome-webfont.eot);
+  font-display: swap; }
 
 @font-face {
   font-family: opensans;
-  src: url("/fonts/OpenSans.woff"); }
+  src: url("/fonts/OpenSans.woff");
+  font-display: swap; }
 
 .breadcrumb {
   transform: translate(300px, 0);
@@ -403,10 +416,12 @@ footer {
       font-family: FontAwesome;
       content: "\f105";
       float: right;
-      margin-left: 5px; }
+      margin-left: 5px;
+      font-display: swap; }
     footer .footer-mobile .box-collapse .active:after {
       font-family: FontAwesome;
-      content: "\f107"; }
+      content: "\f107";
+      font-display: swap; }
     footer .footer-mobile .box-collapse .panel {
       background-color: 414042;
       max-height: 0;
